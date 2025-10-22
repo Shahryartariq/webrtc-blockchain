@@ -9,7 +9,10 @@
     "socket.io": "^2.3.0"
   },
   "scripts": {
-    "start": "PROD=true node server.js",
+    "start": "cross-env PROD=true node server.js",
     "postinstall": "cd ./client && yarn"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }
